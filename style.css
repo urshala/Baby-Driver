@@ -1,0 +1,142 @@
+
+html,
+body{
+	margin: 0;
+	padding: 0;
+
+}
+
+.container{
+	height: 100vh;
+	//overflow: hidden; /* Overflow hidden to remove space taken by position relative elements */
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	bottom: 740px;
+}
+nav .menu{
+	width: 33.33%;
+	height: 350px;
+}
+
+.menu-images li{
+	list-style-type: none;
+	padding: 9px;
+}
+
+.font-icons{
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.font-icons li{
+	list-style-type: none;
+	padding: 6px;
+}
+
+.background{
+	background: url(./Images/bg.jpg);
+	height: 100%;
+	position: relative;
+	background-size: cover;
+	background-position: 0;
+	z-index: -400;
+}
+
+.no-list{
+	list-style-type: none;
+}
+
+.menu-images{
+	background: #333333;
+	margin-left: 0;
+}
+.menu-images img{
+	width: 50%;
+}
+
+/* Nav */
+
+
+.actors{
+	position: relative;
+	bottom: 400px;	
+}
+
+.tickets{
+	position: relative;
+	bottom: 700px;
+	width: 20%;
+
+}
+.tickets img{
+	padding-left: 20px;
+
+}
+.zoom-out{
+	height: 47px;
+
+}
+
+.actors img{
+	display: block;
+	margin: 0 auto;
+	width: 60%;
+}
+.menu img{
+	width: 30%;
+	cursor: pointer;
+	padding: 9px;
+}
+
+
+.tickets{
+	transition: transform 0.5s;
+}
+.tickets:hover{
+	//transform: translate(10px, -30px);
+	transform: rotate(-8deg);
+}
+
+.footer-icons{
+	position: relative;
+	bottom: 806px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.studio{
+	margin-top: 65px;
+	margin-left: 12px;
+}
+.ratings{
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	align-items: flex-end;
+
+}
+.ratings p{
+	text-align: right;
+	margin: 4px;
+}
+
+p a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	font-size: 80%;
+}
+
+p a:hover{
+	color: lightgrey;
+}
+
+.sep{
+	font-size: 18px;
+	font-weight: bolder;
+}
+
