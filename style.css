@@ -8,7 +8,7 @@ body{
 
 .container{
 	height: 100vh;
-	//overflow: hidden; /* Overflow hidden to remove space taken by position relative elements */
+	overflow: hidden; /* Overflow hidden to remove space taken by position relative elements */
 }
 nav{
 	display: flex;
@@ -17,8 +17,8 @@ nav{
 	bottom: 740px;
 }
 nav .menu{
-	width: 33.33%;
-	height: 350px;
+	width: 27%;
+	
 }
 
 .menu-images li{
@@ -53,11 +53,20 @@ nav .menu{
 .menu-images{
 	background: #333333;
 	margin-left: 0;
-}
-.menu-images img{
-	width: 50%;
+	height: 100vh;
+	width: 90%;
+	padding: 4px;
+    margin-top: -4px;
 }
 
+.menu-item{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+}
+.menu-item:hover{
+	background-color: lightgrey;
+}
 /* Nav */
 
 
@@ -76,6 +85,9 @@ nav .menu{
 	padding-left: 20px;
 
 }
+.cancel img{
+	width: 67%;
+}
 .zoom-out{
 	height: 47px;
 
@@ -86,11 +98,26 @@ nav .menu{
 	margin: 0 auto;
 	width: 60%;
 }
-.menu img{
-	width: 30%;
-	cursor: pointer;
-	padding: 9px;
+
+.small-image{
+	height: 22px;
+	padding: 10px;
+	padding-left: 20px;
 }
+
+.menu-item:nth-child(6) .small-image{
+	height: 49px;
+}
+
+
+
+
+.hamburger{
+	width: 20%;
+	cursor: pointer;	
+}
+
+
 
 
 .tickets{
@@ -140,3 +167,32 @@ p a:hover{
 	font-weight: bolder;
 }
 
+
+
+.side-menu{
+	display: flex;
+	justify-content: space-between;
+
+
+}
+
+.side-menu-wrapper{
+	display: none;
+	position: relative;
+}
+
+#wrapper{
+	position: relative;
+	top: -80px;
+	
+}
+
+.cancel{
+	margin-top: 6px;
+	padding-left: 6px;
+	cursor: pointer;
+}
+
+.home{
+	margin-top: 60px;
+}

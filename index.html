@@ -4,6 +4,11 @@
 	<title>Baby Driver</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="driver-script.js"></script>
 </head>
 <body>
 
@@ -12,14 +17,20 @@
 		<div class="background"></div>
 		<nav>
 			<div class="menu">
-				<img src="./Images/menu.png" class="hamburger">
-				<div class="menu-images">
-					<li><img src="./Images/menu_about.png" alt=""></li>
-					<li><img src="./Images/menu_castCrew.png" alt=""></li>
-					<li><img src="./Images/menu_partners.png" alt=""></li>
-					<li><img src="./Images/menu_trailer.png" alt=""></li>
-					<li><img src="./Images/menu_home.png" alt=""></li>
-					<li><img src="./Images/menu_getContent.png" alt=""></li>
+				<img src="./Images/menu.png" class="hamburger" onclick="toggleSide()">
+				<div id="wrapper" class="side-menu-wrapper">
+					<div class="side-menu">
+						<div class="menu-images">
+							<div class="home menu-item"><img src="./Images/menu_home.png" alt="" class="small-image"></div>
+							<div class="about menu-item"><img src="./Images/menu_about.png" alt="" class="small-image"></div>
+							<div class="cast menu-item"><img src="./Images/menu_castCrew.png" alt="" class="small-image"></div>
+							<div class="partner menu-item"><img src="./Images/menu_partners.png" alt="" class="small-image"></div>
+							<div class="trailer menu-item"><img src="./Images/menu_trailer.png" alt="" class="small-image"></div>
+							<div class="content menu-item"><img src="./Images/menu_getContent.png" alt="" class="small-image"></div>
+						</div>
+
+						<div class="cancel"><img src="./Images/close.png"></div>
+					</div>
 				</div>
 			</div>
 			<div class="social">
