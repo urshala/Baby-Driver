@@ -8,16 +8,20 @@ body{
 
 .container{
 	height: 100vh;
-	overflow: hidden; /* Overflow hidden to remove space taken by position relative elements */
+	background: url(./Images/bg.jpg);
+	background-size: cover;
+	background-position: 0;
+	//overflow: hidden; /* Overflow hidden to remove space taken by position relative elements */
 }
 nav{
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	bottom: 740px;
+	//bottom: 740px;
 }
 nav .menu{
 	width: 27%;
+	position: relative;
 	
 }
 
@@ -38,8 +42,8 @@ nav .menu{
 }
 
 .background{
-	background: url(./Images/bg.jpg);
-	height: 100%;
+	//background: url(./Images/bg.jpg);
+	//height: 100%;
 	position: relative;
 	background-size: cover;
 	background-position: 0;
@@ -56,7 +60,9 @@ nav .menu{
 	height: 100vh;
 	width: 90%;
 	padding: 4px;
-    margin-top: -4px;
+	margin-top: -95px;
+	z-index: 150;
+	/* position: absolute; */
 }
 
 .menu-item{
@@ -71,15 +77,19 @@ nav .menu{
 
 
 .actors{
+	/* position: absolute; */
+	//
+	bottom: 400px;
+	top: 232px;
 	position: relative;
-	bottom: 400px;	
 }
 
 .tickets{
-	position: relative;
+	position: absolute;
+	//
 	bottom: 700px;
 	width: 20%;
-
+	bottom: 45px;
 }
 .tickets img{
 	padding-left: 20px;
@@ -130,7 +140,7 @@ nav .menu{
 
 .footer-icons{
 	position: relative;
-	bottom: 806px;
+	bottom: -212px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -172,24 +182,24 @@ p a:hover{
 .side-menu{
 	display: flex;
 	justify-content: space-between;
+	position: absolute;
 
 
 }
 
 .side-menu-wrapper{
 	display: none;
-	position: relative;
+	/* position: relative; */
 }
 
 #wrapper{
-	position: relative;
+	/* position: relative; */
 	top: -80px;
-	
 }
 
 .cancel{
-	margin-top: 6px;
-	padding-left: 6px;
+	margin-top: -55px;
+	padding-left: 13px;
 	cursor: pointer;
 }
 
